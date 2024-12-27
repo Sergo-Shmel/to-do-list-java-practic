@@ -1,0 +1,133 @@
+
+.content-box {
+    -fx-border-color: black;
+    -fx-border-width: 1px;
+    -fx-border-radius: 15px;
+    -fx-background-radius: 15px;
+}
+
+.root {
+    -fx-background-color: #1e1e1e;
+}
+
+.label {
+    -fx-text-fill: #ffffff;
+}
+
+.text-field {
+    -fx-background-color: #333333;
+    -fx-text-fill: #ffffff;
+    -fx-prompt-text-fill: #aaaaaa;
+}
+
+.button {
+    -fx-background-color: #444444;
+    -fx-text-fill: #ffffff;
+    -fx-border-color: #666666;
+    -fx-border-width: 1px;
+    -fx-border-radius: 5px;
+    -fx-background-radius: 5px;
+}
+
+.button:hover {
+    -fx-background-color: #555555;
+}
+
+/* Список задач */
+.list-view {
+    -fx-background-color: #2a2a2a;
+    -fx-text-fill: #ffffff;
+}
+
+.list-cell {
+    -fx-background-color: #2a2a2a;
+    -fx-text-fill: #ffffff;
+}
+
+.list-cell:filled:selected {
+    -fx-background-color: #444444;
+}
+
+.completed-task {
+    -fx-background-color: #006400;
+}
+
+.incomplete-task {
+    -fx-background-color: #8b0000;
+}
+
+.edit-button:hover {
+    -fx-background-color: orange;
+}
+
+.delete-button:hover {
+    -fx-background-color: red;
+}
+
+.expand-button:hover {
+    -fx-background-color: darkblue;
+
+}
+
+
+.dialog-pane .button.save-button:hover {
+    -fx-background-color: #006400;
+}
+
+
+.dialog-pane .button.cancel-button:hover {
+    -fx-background-color: red;
+}
+
+.dialog-pane {
+    -fx-background-color: #1e1e1e;
+}
+
+.dialog-pane .label {
+    -fx-text-fill: #ffffff;
+}
+
+.dialog-pane .button {
+    -fx-background-color: #444444;
+    -fx-text-fill: #ffffff;
+}
+
+.dialog-pane .button:hover {
+    -fx-background-color: #555555;
+}
+
+.dialog-pane .text-field {
+    -fx-background-color: #333333;
+    -fx-text-fill: #ffffff;
+    -fx-prompt-text-fill: #aaaaaa;
+}
+
+
+.check-box .box {
+    -fx-background-color: #333333;
+    -fx-border-color: #666666;
+    -fx-border-width: 1px;
+    -fx-background-radius: 3px;
+}
+
+.check-box:selected .mark {
+    -fx-background-color: #ffffff;
+}
+
+.check-box:selected .box {
+    -fx-background-color: #008000;
+    -fx-border-color: #006400;
+}
+
+.dialog-pane > .header-panel {
+    -fx-background-color: #1e1e1e;
+}
+
+.dialog-pane > .header-panel .label {
+    -fx-text-fill: #ffffff;
+    -fx-font-size: 14px;
+}
+
+.dialog-pane > .header-panel .graphic-container {
+    -fx-background-color: #1e1e1e;
+}

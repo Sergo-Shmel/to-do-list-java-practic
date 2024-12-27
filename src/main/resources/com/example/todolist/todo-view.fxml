@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import org.controlsfx.glyphfont.Glyph?>
+<VBox fx:id="root" spacing="10" alignment="TOP_CENTER" xmlns:fx="http://javafx.com/fxml" fx:controller="com.example.todolist.TodoController" stylesheets="/com/example/todolist/darkmode.css">
+    <padding>
+        <Insets top="10" right="10" bottom="10" left="10"/>
+    </padding>
+
+    <Label text="To-Do List" style="-fx-font-size: 20;"/>
+
+    <Button text="Toggle Theme" onAction="#toggleTheme" style="-fx-font-size: 12; -fx-padding: 5 10 5 10;"/>
+    <Button onAction="#addTask">
+        <graphic>
+            <Glyph fontFamily="FontAwesome" icon="PLUS"/>
+        </graphic>
+    </Button>
+    <TextField fx:id="filterField" promptText="Search..."/>
+
+    <ListView fx:id="taskListView" prefHeight="200" VBox.vgrow="ALWAYS">
+        <padding>
+            <Insets  right="5" left="5"/>
+        </padding>
+    </ListView>
+
+    <HBox spacing="10" alignment="CENTER">
+        <Button onAction="#previousPage">
+            <graphic>
+                <Glyph fontFamily="FontAwesome" icon="ARROW_LEFT"/>
+            </graphic>
+        </Button>
+        <Button onAction="#nextPage">
+            <graphic>
+                <Glyph fontFamily="FontAwesome" icon="ARROW_RIGHT"/>
+            </graphic>
+        </Button>
+    </HBox>
+    <HBox spacing="10" alignment="CENTER">
+        <Button text="Sort by Title" onAction="#sortByTitle"/>
+        <Button text="Sort by Completion" onAction="#sortByCompletion"/>
+    </HBox>
+
+</VBox>
